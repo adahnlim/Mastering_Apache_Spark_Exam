@@ -30,7 +30,7 @@ object hive_simple extends App
     // RDD to Array
     data.collect().foreach(println)
 
-    // RDD to Cutom data Array
+    // RDD to Custom data Array
     data.map( t=> t(0) + " " + t(1)+ " " +t(2) ).collect().foreach(println)
 
 
